@@ -4,7 +4,6 @@ module Peek
 
     included do
       prepend_before_filter :set_peek_request_id, :if => :peek_enabled?
-      helper_method :peek_enabled?
     end
 
     protected

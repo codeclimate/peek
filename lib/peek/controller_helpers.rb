@@ -13,8 +13,5 @@ module Peek
       Peek.request_id = env['action_dispatch.request_id']
     end
 
-    def peek_enabled?
-      Peek.enabled?
-    end
   end
 end
